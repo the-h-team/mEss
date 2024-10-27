@@ -6,6 +6,7 @@ plugins {
 dependencies {
     api(project(":myessentials-addons"))
     api(project(":myessentials-api"))
+    api(libs.location.api)
 }
 
 tasks.withType<ProcessResources> {
@@ -24,4 +25,11 @@ tasks.withType<ProcessResources> {
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     archiveFileName.set("${rootProject.name}-${project.version}.jar")
     archiveClassifier.set("plugin")
+    dependencies {
+        libs.location.api.get().run {
+            include(dependency("$group:$name:$version"))
+        }
+        include(project(":myessentials-addons"))
+        include(project(":myessentials-api"))
+    }
 }
