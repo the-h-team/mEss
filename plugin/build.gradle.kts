@@ -1,5 +1,6 @@
 plugins {
     id("myessentials.java-conventions")
+    id("myessentials.publishing")
     id("com.gradleup.shadow") version "8.3.3"
 }
 
