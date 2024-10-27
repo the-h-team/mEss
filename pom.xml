@@ -8,9 +8,9 @@
     <artifactId>myessentials</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <modules>
-        <module>myEssentials-plugin</module>
-        <module>myEssentials-addons</module>
-        <module>myEssentials-api</module>
+        <module>plugin</module>
+        <module>addons</module>
+        <module>api</module>
     </modules>
     <packaging>pom</packaging>
     <!-- Guide to import submodules with Jitpack: -->
