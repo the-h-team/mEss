@@ -1,8 +1,8 @@
 name: myEssentials
-version: 1.0.1-SNAPSHOT
+version: ${project.version}
 main: com.github.sanctum.myessentials.Essentials
 api-version: 1.13
-author: ${parent.organization.name}
-description: ${parent.description}
-website: ${parent.organization.url}
+author: Sanctum
+description: ${project.description}
+website: ${project.url}
 depend: [ Labyrinth ]
